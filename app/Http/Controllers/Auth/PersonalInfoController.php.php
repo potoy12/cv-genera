@@ -30,7 +30,7 @@ class PersonalInfoController extends Controller
 public function show($id)
 {
     $personalInfo = PersonalInfo::findOrFail($id); // Encuentra el registro por ID o falla
-    return view('personalinfo.show', compact('personalInfo')); // Envía los datos a la vista
+    return view('personalinfo.show', compact('personalInfo')); // Envía los datos del form a la vista
 }
 
 }
